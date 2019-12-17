@@ -20,6 +20,7 @@ LUGAR_ORIGEN = 'Tlapacoyan, Tlapacoyan Ver.'
 LUGAR_DESTINO = 'Xalapa CAXA, Xalapa-Enríquez Ver.'
 #dia en el que se hará el viaje
 DIA_CORRIDA = 22
+PRICE_TOP = 150
 seguir = True
 while seguir:
     try:
@@ -68,7 +69,8 @@ while seguir:
         lista = ''
         for x in precios:
             info = x.text.split("\n")
-            if int(info[7].replace('$', '')) < 150:
+            ''' se buscan precios menores a 150 '''
+            if int(info[7].replace('$', '')) < PRICE_TOP:
                 lista = lista +"\n "+info[1]+" "+info[7]
 
         if lista != '':
