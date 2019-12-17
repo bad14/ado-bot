@@ -1,6 +1,6 @@
 '''
 BOT para sacar ofertas de corridas de la página de ADO
-Por: Rigoberto M. rigohvz14@gmail.com
+Por: ]3/\|)´|+|><. rigohvz14@gmail.com
 '''
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
